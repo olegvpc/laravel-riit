@@ -64,7 +64,7 @@ http://localhost:80
 3: Создан UI на PHP (http://localhost:80) для занесения данных в базу
 4: Настроена верификация данных на уровне контроллера при получении формы
 5: Данные верификации возвращаются на исходную страницу при fail
-![alert](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![validation](https://github.com/olegvpc/laravel-riit/blob/main/images/validation.png?raw=true)
 6: выводится сообщение при создании записи в ВD (через запист в session())
-![validation](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alert](https://github.com/olegvpc/laravel-riit/blob/main/images/alert.png?raw=true)
 7: Настроены route(End-points) как для записи данных из формы, так и через API
