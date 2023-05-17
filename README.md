@@ -38,7 +38,7 @@ MVC или MVVM, сложная выборка должна реализовыв
 #### 7: Данные верификации возвращаются на исходную страницу при fail
 ![validation](https://github.com/olegvpc/laravel-riit/blob/main/images/validation.png?raw=true)
 #### 8: Подключены русские варианты сообщений верификации
-#### 9: Выводится сообщение при создании записи в ВD (через запист в session())
+#### 9: Выводится сообщение при создании записи в ВD (через запись в session())
 ![alert](https://github.com/olegvpc/laravel-riit/blob/main/images/alert.png?raw=true)
 #### 10: Настроены route(End-points) как для записи данных из формы, так и через API
 
