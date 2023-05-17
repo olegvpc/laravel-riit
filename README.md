@@ -43,34 +43,54 @@ MVC или MVVM, сложная выборка должна реализовыв
 #### 10: Настроены route(End-points) как для записи данных из формы, так и через API
 
 ### Установка BackEnd (запускается локально в Docker)
-1: clone repository
+* 1: clone repository
 ``` 
 git clone https://github.com/olegvpc/laravel-riit.git
 ```
-2: cd to work-project
+* 2: cd to work-project
 
-3: for short record use ALIAS
+* 3: for short record use ALIAS
 ```
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 ```
-4: Run MIGRATION
-```shell
-sail artisan migrate 
-```
-5: To start all of the Docker containers in the background, you may start Sail in "detached" mode:
+* 4: To start all of the Docker containers in the background, you may start Sail in "detached" mode:
 ```shell
 sail up -d
 ```
-6: You may use the shell command to connect to your application's container, allowing you to inspect its files and installed services as well execute arbitrary shell commands within the container:
+* 5: Run MIGRATION
+```shell
+sail artisan migrate 
+```
+* 6: You may use the shell command to connect to your application's container, allowing you to inspect its files and installed services as well execute arbitrary shell commands within the container:
 ```shell
 sail shell
 ```
-7: for install all dependencies
+* 7: for install all dependencies
 ```shell
 composer dump
 ```
-Project run: 
+
+* 8: Project run: 
 ```
 http://localhost:80
 ``` 
 
+### Установка FrontEnd (запускается локально)
+* 1: clone repository
+``` 
+git clone https://github.com/olegvpc/react-riit.git
+```
+* 2: cd to work-project
+
+* 3: install dependecies
+```
+* npm install
+```
+* 4: Run Project
+```shell
+npm start
+```
+* 5: Project run: 
+```
+http://localhost:3000
+``` 
