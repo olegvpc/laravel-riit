@@ -41,7 +41,7 @@ class CityController extends Controller
         // dd($request->all());
         $validated = $request->validate([
             // 'city' => ['required', 'string', 'min:1', 'max:50', 'unique:cities,city'],
-            'city' => ['required', 'string', 'min:1', 'max:50',  Rule::unique('cities', 'city')],
+            'city' => ['required', 'string', 'min:1', 'max:50'],
             'id' => ['required', 'string', 'exists:users,id']
         ]);
         // dd($validated);

@@ -23,7 +23,26 @@ MVC или MVVM, сложная выборка должна реализовыв
 базы, чтобы можно было «поднять» и посмотреть на его работу.
 * 7 Решение предпочтительно выкладывать в GitHub.
 
-### Установка (запускается локально в Docker)
+
+### Выполнено:
+#### 1: Использоваться шаблон проектирования MVC
+#### 2: BackEnd выполнен на PHP (Laravel)
+#### 3: DB - MySQL
+#### 4: FrontEnd выполнен на React (я пока не знаю ExtJS, а выучить новый FW за неделю не смогу)
+![react](https://github.com/olegvpc/laravel-riit/blob/main/images/react.png?raw=true)
+#### 4.1 Использовал адаптивную верстку
+#### 4.2 Карточки юзров построены на grid - внутри на flex
+#### 4.3 при обновлении данных образования и городов рендерится только карточка юзера
+#### 5: Создан UI на PHP (http://localhost:80) для занесения данных в базу
+#### 6: Настроена верификация данных на уровне контроллера при получении формы
+#### 7: Данные верификации возвращаются на исходную страницу при fail
+![validation](https://github.com/olegvpc/laravel-riit/blob/main/images/validation.png?raw=true)
+#### 8: Подключены русские варианты сообщений верификации
+#### 9: Выводится сообщение при создании записи в ВD (через запист в session())
+![alert](https://github.com/olegvpc/laravel-riit/blob/main/images/alert.png?raw=true)
+#### 10: Настроены route(End-points) как для записи данных из формы, так и через API
+
+### Установка BackEnd (запускается локально в Docker)
 1: clone repository
 ``` 
 git clone https://github.com/olegvpc/laravel-riit.git
@@ -34,12 +53,10 @@ git clone https://github.com/olegvpc/laravel-riit.git
 ```
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 ```
-
 4: Run MIGRATION
 ```shell
 sail artisan migrate 
 ```
-
 5: To start all of the Docker containers in the background, you may start Sail in "detached" mode:
 ```shell
 sail up -d
@@ -48,23 +65,12 @@ sail up -d
 ```shell
 sail shell
 ```
-
 7: for install all dependencies
 ```shell
 composer dump
 ```
-Finish: Project run: 
+Project run: 
 ```
 http://localhost:80
 ``` 
 
-### Выполнено
-1: BackEnd выполнен на PHP (Laravel)
-2: DB - MySQL
-3: Создан UI на PHP (http://localhost:80) для занесения данных в базу
-4: Настроена верификация данных на уровне контроллера при получении формы
-5: Данные верификации возвращаются на исходную страницу при fail
-![validation](https://github.com/olegvpc/laravel-riit/blob/main/images/validation.png?raw=true)
-6: выводится сообщение при создании записи в ВD (через запист в session())
-![alert](https://github.com/olegvpc/laravel-riit/blob/main/images/alert.png?raw=true)
-7: Настроены route(End-points) как для записи данных из формы, так и через API
